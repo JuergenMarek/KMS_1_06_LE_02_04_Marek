@@ -60,15 +60,15 @@ class Program
     static void personAnlegen()
     {
         Console.Write("Vorname: ");
-        string firstName = Console.ReadLine();
+        string vorname = Console.ReadLine();
         Console.Write("Nachname: ");
-        string lastName = Console.ReadLine();
+        string nachname = Console.ReadLine();
         Console.Write("Alter: ");
-        int age = int.Parse(Console.ReadLine());
+        int alter = int.Parse(Console.ReadLine());
         Console.Write("Telefonnummer: ");
-        string phoneNumber = Console.ReadLine();
+        string telefonnummer = Console.ReadLine();
 
-        string[] person = { firstName, lastName, age.ToString(), phoneNumber };
+        string[] person = { vorname, nachname, alter.ToString(), telefonnummer };
         listePersonen.Add(person);
 
         Console.WriteLine("Person hinzugefügt.");
